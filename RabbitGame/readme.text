@@ -1,0 +1,26 @@
+function love.load()
+
+    rabbit = {}
+       rabbit.x = 400
+       rabbit.y = 200
+      rabbit.speed = 5
+      rabbit.Sprites = love.graphics.newImage('Sprites/rabbit.png')
+      background = love.graphics.newImage('Sprites/background.jpg')
+rabbit_lost.png = love.graphics.newImage('Sprites/rabbit_emoji.png')
+
+    bush = {}
+       bush.x = 400
+       bush.y = 200
+        bush = love.graphics.newImage('Sprites/bush.png')
+    
+
+    background = love.graphics.newImage('Sprites/background.jpg')
+    ground = love.graphics.newImage('Sprites/ground.png')
+    emoji = love.graphics.newImage('Sprites/rabbit_emoji.png')
+
+    isJumping = false
+    isGameOver = false
+
+    -- Calculate the ground height based on the loaded ground image
+    groundHeight = ground:getHeight()
+end
